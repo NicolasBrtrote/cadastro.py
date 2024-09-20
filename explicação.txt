@@ -1,0 +1,54 @@
+ cadastrar_usuario()
+Propósito: Permite ao usuário cadastrar um novo usuário.
+Funcionamento: Solicita um ID para o novo usuário. Se o ID já existir, informa que o usuário já está cadastrado. 
+Caso contrário, coleta o nome e o e-mail, armazena essas informações em um dicionário e confirma o cadastro.
+  
+  listar_usuarios()
+Propósito: Exibe todos os usuários cadastrados.
+Funcionamento: Verifica se há usuários cadastrados. 
+Se não houver, informa que a lista está vazia. 
+Caso contrário, itera sobre o dicionário de usuários e imprime cada um com seu ID, nome e e-mail.
+  
+  consultar_usuario()
+Propósito: Permite a busca de um usuário pelo seu ID.
+Funcionamento: Solicita um ID ao usuário. 
+Se o ID estiver no dicionário, exibe os dados do usuário correspondente. 
+Se não estiver, informa que o usuário não foi encontrado.
+  
+  excluir_usuario()
+Propósito: Remove um usuário cadastrado.
+Funcionamento: Solicita o ID do usuário a ser excluído. 
+Se o ID existir no dicionário, remove o usuário e confirma a exclusão. Se não existir, diz que o não foi encontrado.
+  
+  exportar_para_csv()
+Propósito: Salva todos os usuários cadastrados em um arquivo CSV.
+Funcionamento: Abre ou cria um arquivo chamado usuarios.csv e escreve os dados dos usuários (ID, nome e e-mail) no formato CSV. 
+Confirma a exportação ao final.
+  
+  menu()
+Propósito: Exibe um menu interativo para o usuário realizar operações.
+Funcionamento: Apresenta opções de cadastro, listagem, consulta, exclusão e saída. 
+Dependendo da escolha do usuário, chama a função correspondente ou finaliza o programa, exportando os dados para CSV antes de sair.
+  
+  if __name__ == "__main__":
+Propósito: Executa o menu se o script for executado diretamente.
+Funcionamento: Chama a função menu() para iniciar a interação com o usuário.
+  
+  def
+Propósito: É uma palavra-chave em Python usada para definir uma função.
+Funcionamento: Quando é usado def nome_da_funcao():, está criando uma nova função com o nome especificado.
+ O código dentro da função será executado quando a função for chamada. 
+ Por exemplo, def cadastrar_usuario(): define a função que permite cadastrar um novo usuário.
+  
+  elif
+Propósito: É uma abreviação de "else if" e é usado em estruturas condicionais.
+Funcionamento: Permite adicionar múltiplas condições em uma estrutura if. 
+Se a condição do if não for verdadeira, o programa verifica a condição do elif. 
+Se a condição do elif for verdadeira, o bloco de código correspondente é executado. 
+No código, é usado para verificar qual opção o usuário escolheu no menu, como elif escolha == "1": para cadastrar um novo usuário.
+  
+  print
+Propósito: É uma função embutida em Python usada para exibir informações na tela.
+Funcionamento: Você pode passar diferentes tipos de dados para print, como strings, números ou variáveis, e a função irá convertê-los em texto e exibi-los. 
+Por exemplo, print("Usuário cadastrado com sucesso.") exibe essa mensagem quando um usuário é cadastrado com sucesso. 
+Também pode formatar strings para incluir variáveis, como em print(f"ID: {id_usuario}, Nome: {dados['nome']}, E-mail: {dados['email']}"), que mostra os dados de um usuário específico.
